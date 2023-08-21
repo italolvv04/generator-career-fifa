@@ -1,4 +1,5 @@
 import styles from "../styles.module.css";
+import Navigation from "./navigation";
 
 import mockTeams from "../Mock/england/england.json";
 import mockFormations from "../Mock/formations.json";
@@ -11,7 +12,6 @@ import mockPlayersAges from "../Mock/playersAges.json";
 
 import { useState } from "react";
 import { FiArrowLeft } from "react-icons/fi";
-import { goToHome } from "./navigation";
 
 interface Team {
   name: string;
@@ -167,7 +167,7 @@ const England = () => {
   return (
     <div className={styles.container}>
       <div className={styles.card}>
-        <button onClick={goToHome}>
+        <button onClick={Navigation}>
           <FiArrowLeft />
         </button>
         <h1>Gerador Modo Carreira - FIFA 23</h1>

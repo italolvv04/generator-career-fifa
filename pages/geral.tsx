@@ -1,5 +1,5 @@
 import styles from "../styles.module.css";
-import { goToHome } from './navigation';
+import Navigation from "./navigation";
 
 import mockTeams from "../Mock/teams.json";
 import mockFormations from "../Mock/formations.json";
@@ -168,7 +168,7 @@ const Geral = () => {
   return (
     <div className={styles.container}>
       <div className={styles.card}>
-        <button onClick={goToHome}>
+        <button onClick={Navigation}>
           <FiArrowLeft />
         </button>
         <h1>Gerador Modo Carreira - FIFA 23</h1>
